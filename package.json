@@ -1,0 +1,10 @@
+{
+  "name": "holonet-learn-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LEARN HOLONET \u2014 learn.holonet.oasisomniverse.one (generated from holochain-client-csharp)",
+  "scripts": {
+    "dev": "npx serve . -p 3003",
+    "build": "echo 'Static site - no build step required'"
+  }
+}
