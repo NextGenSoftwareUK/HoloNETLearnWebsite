@@ -28,14 +28,17 @@
       <div class="nav-section-title">Start here</div>
       <a class="nav-item active" href="/">Home</a>
       <div class="nav-section-title">Tutorials</div>
+      <a class="nav-item" href="/tutorials/00-up-and-running-in-5-minutes">Up and running in 5 minutes</a>
       <a class="nav-item" href="/tutorials/01-first-zome-call">Your first zome call</a>
       <a class="nav-item" href="/tutorials/02-save-data-in-one-line">Save data in one line</a>
       <a class="nav-item" href="/tutorials/03-model-your-data">Model your data with the ORM</a>
       <a class="nav-item" href="/tutorials/04-a-live-site-on-holochain">A live web site on Holochain</a>
       <a class="nav-item" href="/tutorials/05-multiplayer-with-hypernet">Real-time multiplayer with HyperNET</a>
       <a class="nav-item" href="/tutorials/06-generate-a-happ">Generate a hApp from your classes</a>
+      <a class="nav-item" href="/tutorials/07-a-template-for-every-app">A template for every app</a>
       <div class="nav-section-title">Resources</div>
       <a class="nav-item" href="https://docs.holonet.oasisomniverse.one" target="_blank">Docs &amp; API reference ↗</a>
+      <a class="nav-item" href="https://sandbox.holonet.oasisomniverse.one" target="_blank">Sandbox ↗</a>
       <a class="nav-item" href="https://github.com/holochain-open-dev/holochain-client-csharp/tree/main/examples" target="_blank">Examples ↗</a>
       <a class="nav-item" href="https://github.com/holochain-open-dev/holochain-client-csharp" target="_blank">GitHub ↗</a>
     </nav>
@@ -57,12 +60,16 @@
     <div class="content">
 <p>Step-by-step tutorials for building on Holochain with .NET: each one takes you from nothing to something that works, using code that HoloNET runs against real Holochain 0.7.0 and 0.7.1 conductors on every release.</p>
 <div class="track-grid">
-<a class="track-card" href="/tutorials/01-first-zome-call"><h3>1. Your first zome call</h3><p>a .NET console app that connects to Holochain, installs a hApp, writes an entry, reads it back, and receives a signal from another agent.</p><p class="card-time">15 minutes</p></a>
-<a class="track-card" href="/tutorials/02-save-data-in-one-line"><h3>2. Save data in one line</h3><p>an app that saves, loads and deletes settings and objects on Holochain, with no Rust, no zome calls and no setup code.</p><p class="card-time">10 minutes</p></a>
-<a class="track-card" href="/tutorials/03-model-your-data"><h3>3. Model your data with the ORM</h3><p>a C# class that maps onto a hApp entry: save it, load it, change it (with change tracking), delete it, and keep lists of them in collections.</p><p class="card-time">20 minutes</p></a>
-<a class="track-card" href="/tutorials/04-a-live-site-on-holochain"><h3>4. A live web site on Holochain</h3><p>an ASP.NET Core site with a guestbook and a leaderboard that every visitor shares, stored on Holochain and updated instantly in every open browser.</p><p class="card-time">25 minutes</p></a>
-<a class="track-card" href="/tutorials/05-multiplayer-with-hypernet"><h3>5. Real-time multiplayer with HyperNET</h3><p>a game loop where players in a zone see each other move and exchange messages directly, peer to peer, with no game server. Only nearby players get your traffic.</p><p class="card-time">25 minutes</p></a>
-<a class="track-card" href="/tutorials/06-generate-a-happ"><h3>6. Generate a hApp from your classes</h3><p>a complete Holochain 0.7 hApp (the Rust zomes, manifests and a build script) and the matching C# models, generated from a description of your data. You don&#x27;t write any Rust.</p><p class="card-time">20 minutes (plus the first Rust build)</p></a>
+<a class="track-card" href="/tutorials/00-up-and-running-in-5-minutes"><h3>1. Up and running in 5 minutes</h3><p>a working .NET app that saves and loads data on Holochain, from one command, in the kind of app you already build (web, desktop, mobile, game).</p><p class="card-time">5 minutes</p></a>
+<a class="track-card" href="/tutorials/01-first-zome-call"><h3>2. Your first zome call</h3><p>a .NET console app that connects to Holochain, installs a hApp, writes an entry, reads it back, and receives a signal from another agent.</p><p class="card-time">15 minutes</p></a>
+<a class="track-card" href="/tutorials/02-save-data-in-one-line"><h3>3. Save data in one line</h3><p>an app that saves, loads and deletes settings and objects on Holochain, with no Rust, no zome calls and no setup code.</p><p class="card-time">10 minutes</p></a>
+<a class="track-card" href="/tutorials/03-model-your-data"><h3>4. Model your data with the ORM</h3><p>a C# class that maps onto a hApp entry: save it, load it, change it (with change tracking), delete it, and keep lists of them in collections.</p><p class="card-time">20 minutes</p></a>
+<a class="track-card" href="/tutorials/04-a-live-site-on-holochain"><h3>5. A live web site on Holochain</h3><p>an ASP.NET Core site with a guestbook and a leaderboard that every visitor shares, stored on Holochain and updated instantly in every open browser.</p><p class="card-time">25 minutes</p></a>
+<a class="track-card" href="/tutorials/05-multiplayer-with-hypernet"><h3>6. Real-time multiplayer with HyperNET</h3><p>a game loop where players in a zone see each other move and exchange messages directly, peer to peer, with no game server. Only nearby players get your traffic.</p><p class="card-time">25 minutes</p></a>
+<a class="track-card" href="/tutorials/06-generate-a-happ"><h3>7. Generate a hApp from your classes</h3><p>a complete Holochain 0.7 hApp (the Rust zomes, manifests and a build script) and the matching C# models, generated from a description of your data. You don&#x27;t write any Rust.</p><p class="card-time">20 minutes (plus the first Rust build)</p></a>
+<a class="track-card" href="/tutorials/07-a-template-for-every-app"><h3>8. A template for every app</h3><p>You&#x27;ll learn: how each kind of .NET app calls HoloNET, so you can drop HoloNET into the app you already have.
+Time: 10 minutes. You need: Up and running in 5 minutes done once.
+The templates: templates/ · Templates refer</p><p class="card-time">10 minutes</p></a>
 </div>
 <h2 id="next">Next</h2>
 <p>Every guide and the full API reference are at <a href="https://docs.holonet.oasisomniverse.one">docs.holonet.oasisomniverse.one</a>, and the runnable examples are in <a href="https://github.com/holochain-open-dev/holochain-client-csharp/tree/main/examples">examples/</a>.</p>
