@@ -116,7 +116,7 @@ button.Click += async (s, e) =&gt; output.Text = await HoloNETDemos.HoloNETDemo.
 <div class="code-block"><div class="code-block-header"><span class="code-lang">csharp</span><button class="copy-btn">Copy</button></div><pre>// holonet-ios: SceneDelegate.cs
 button.TouchUpInside += async (s, e) =&gt; output.Text = await HoloNETDemos.HoloNETDemo.RunAsync ();
 </pre></div>
-<p>A phone can't run a Holochain conductor, so these apps connect to one on your computer or a server. Set <code>HoloNETDemo.AdminUri</code> to reach it (an Android emulator uses <code>ws://10.0.2.2:7777</code>)
+<p>A phone can run a Holochain conductor (Our World does, through the OASIS Edge runtime on Android), but these templates don't bundle one yet, so they connect to one on your computer or a server. Set <code>HoloNETDemo.AdminUri</code> to reach it (an Android emulator uses <code>ws://10.0.2.2:7777</code>)
 and <code>HoloNETDemo.HappPath</code> to where the hApp is on the conductor's computer.</p>
 <h2 id="games-unity">Games: Unity</h2>
 <p>Create a Unity project, copy in the <code>Assets</code> folder from <code>dotnet new holonet-unity</code>, let NuGetForUnity restore the packages and add the <code>HoloNETBehaviour</code> component:</p>
