@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Generate a hApp from your classes — LEARN HOLONET</title>
-<meta name="description" content="You&#x27;ll build: a complete Holochain 0.7 hApp (the Rust zomes, manifests and a build script) and the matching C# models, generated from a description of your data. You don&#x27;t write any Rust.
+<meta name="description" content="You&#x27;ll build: a complete Holochain 0.7.x hApp (0.7.0 and 0.7.1) (the Rust zomes, manifests and a build script) and the matching C# models, generated from a description of your data. You don&#x27;t write any Rust.
 Time: 20 minutes (plus the first Rust build). You need: Rust with rustup target add wasm32-unknown-unknown, and Holochain&#x27;s hc (bundled with HoloNET on Windows).
 Finished code: examples/05-GenerateHapp and its STAR OAPP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@ Finished code: examples/05-GenerateHapp and its STAR OAPP.">
       <div class="breadcrumb"><a href="/">LEARN HOLONET</a><span class="breadcrumb-sep">/</span><span>Tutorials</span></div>
       <div class="page-meta"><span class="badge badge-reference">Tutorial</span><span class="badge badge-version">HoloNET 4.x · Holochain 0.7.0 / 0.7.1</span></div>
       <h1 class="page-title">Generate a hApp from your classes</h1>
-      <p class="page-desc"><strong>You'll build:</strong> a complete Holochain 0.7 hApp (the Rust zomes, manifests and a build script) and the matching C# models, generated from a description of your data. You don't write any Rust.
+      <p class="page-desc"><strong>You'll build:</strong> a complete Holochain 0.7.x hApp (0.7.0 and 0.7.1) (the Rust zomes, manifests and a build script) and the matching C# models, generated from a description of your data. You don't write any Rust.
 <strong>Time:</strong> 20 minutes (plus the first Rust build). <strong>You need:</strong> <a href="https://rustup.rs">Rust</a> with <code>rustup target add wasm32-unknown-unknown</code>, and Holochain's <code>hc</code> (bundled with HoloNET on Windows).
 <strong>Finished code:</strong> <a href="https://github.com/holochain-open-dev/holochain-client-csharp/blob/main/examples/05-GenerateHapp/Program.cs"><code>examples/05-GenerateHapp</code></a> and its <a href="https://github.com/holochain-open-dev/holochain-client-csharp/tree/main/examples/05-GenerateHapp/StarOAPP">STAR OAPP</a>.</p>
     </div>
@@ -89,7 +89,7 @@ Finished code: examples/05-GenerateHapp and its STAR OAPP.">
 </ol>
 <p><code>star light</code></p>
 <ol start="2">
-<li>Give it the folder with your DNA file. STAR writes the OAPP, plus the hApp in <code>&lt;OAPP folder&gt;/Rust</code>, from its editable Holochain 0.7 templates.</li>
+<li>Give it the folder with your DNA file. STAR writes the OAPP, plus the hApp in <code>&lt;OAPP folder&gt;/Rust</code>, from its editable Holochain 0.7 templates (for 0.7.0 and 0.7.1).</li>
 </ol>
 <h2 id="2b-or-generate-it-from-code">2b. ...or generate it from code</h2>
 <div class="code-block"><div class="code-block-header"><span class="code-lang">bash</span><button class="copy-btn">Copy</button></div><pre>dotnet add package NextGenSoftware.Holochain.HoloNET.ORM
@@ -120,7 +120,7 @@ await fleet.LoadCollectionAsync(&quot;fleet-1&quot;);
 </pre></div>
 <h2 id="what-just-happened">What just happened</h2>
 <ul>
-<li><strong>Coverage.</strong> The generator wrote everything Holochain 0.7 needs for each entry: CRUD, a list of all entries, anchored collections, and a <code>validate</code> callback ready for your rules.</li>
+<li><strong>Coverage.</strong> The generator wrote everything Holochain 0.7.0 and 0.7.1 need for each entry: CRUD, a list of all entries, anchored collections, and a <code>validate</code> callback ready for your rules.</li>
 <li><strong>Matching models.</strong> The C# models use the zome functions the generated hApp has, so they work together without changes.</li>
 <li><strong>It's yours.</strong> Add validation rules, extra zome functions or links between entries. HoloNET's own tests generate this kind of hApp, compile it with cargo, and drive it with the ORM on real 0.7.0 and 0.7.1 conductors.</li>
 </ul>
