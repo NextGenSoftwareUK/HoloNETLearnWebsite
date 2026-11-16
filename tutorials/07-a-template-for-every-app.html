@@ -93,20 +93,6 @@ public async Task OnGetAsync() =&gt; Result = await HoloNETDemos.HoloNETDemo.Run
 }
 </pre></div>
 <p>Blazor WebAssembly runs in the browser, which can't host a conductor, so it connects to one you run (see the templates reference).</p>
-<h2 id="more-web-and-service-types-minimal-native-aot-signalr-mcp-orleans">More web and service types: minimal, Native AOT, SignalR, MCP, Orleans</h2>
-<div class="code-block"><div class="code-block-header"><span class="code-lang">csharp</span><button class="copy-btn">Copy</button></div><pre>// holonet-web and holonet-webapiaot (Native AOT): GET /holonet
-app.MapGet(&quot;/holonet&quot;, async () =&gt; Results.Text(await HoloNETDemos.HoloNETDemo.RunAsync()));
-</pre></div>
-<div class="code-block"><div class="code-block-header"><span class="code-lang">csharp</span><button class="copy-btn">Copy</button></div><pre>// holonet-signalr: HoloNETHub.cs. Browsers call RunDemo over a live connection (wwwroot/index.html shows how).
-public Task&lt;string&gt; RunDemo() =&gt; HoloNETDemos.HoloNETDemo.RunAsync();
-</pre></div>
-<div class="code-block"><div class="code-block-header"><span class="code-lang">csharp</span><button class="copy-btn">Copy</button></div><pre>// holonet-mcpserver: Tools/HoloNETTools.cs. An AI client (Claude, Copilot) calls this tool to use Holochain.
-[McpServerTool]
-public Task&lt;string&gt; RunHoloNETDemo() =&gt; HoloNETDemos.HoloNETDemo.RunAsync();
-</pre></div>
-<div class="code-block"><div class="code-block-header"><span class="code-lang">csharp</span><button class="copy-btn">Copy</button></div><pre>// holonet-orleans: HoloNETGrain.cs. A grain that wraps HoloNET, so Orleans can place it on any silo.
-public Task&lt;string&gt; RunDemoAsync() =&gt; HoloNETDemos.HoloNETDemo.RunAsync();
-</pre></div>
 <h2 id="desktop-wpf-winforms-winui-avalonia">Desktop: WPF, WinForms, WinUI, Avalonia</h2>
 <div class="code-block"><div class="code-block-header"><span class="code-lang">csharp</span><button class="copy-btn">Copy</button></div><pre>// holonet-wpf, holonet-winui and holonet-avalonia: a button's click handler
 private async void RunButton_Click(object sender, RoutedEventArgs e)
@@ -180,7 +166,6 @@ private async void Run() =&gt; output = await HoloNETDemos.HoloNETDemo.RunAsync(
       <a href="#a-template-for-every-app">A template for every app</a>
       <a href="#console-and-background-services">Console and background services</a>
       <a href="#web-web-api-mvc-razor-pages-blazor">Web: Web API, MVC, Razor Pages, Blazor</a>
-      <a href="#more-web-and-service-types-minimal-native-aot-signalr-mcp-orleans">More web and service types: minimal, Native AOT, SignalR, MCP, Orleans</a>
       <a href="#desktop-wpf-winforms-winui-avalonia">Desktop: WPF, WinForms, WinUI, Avalonia</a>
       <a href="#mobile-and-cross-platform-maui-maui-blazor-uno-android-ios">Mobile and cross-platform: MAUI, MAUI Blazor, Uno, Android, iOS</a>
       <a href="#games-unity">Games: Unity</a>
